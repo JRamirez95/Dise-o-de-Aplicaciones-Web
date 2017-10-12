@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/docs-assets/ico/favicon.png">
+
+    <title>Registro de Vacunas e Inyecciones</title>
+    <link rel="stylesheet" href="css/estilos.css">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+
+  <body class="registros">  
+      
+     <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">          
+          <a class="navbar-brand" href="#"> C.G. Industrial</a>          
+        </div> 
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="">Finca Hnos.Ramírez</a></li>           
+          </ul>
+          <ul class="nav navbar-nav navbar-right">        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Ayuda</a></li>
+            <li><a href="Principal.html"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Cerrar</a></li>            
+          </ul>
+        </li>
+      </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container registro">      
+      
+      <div class="panel panel-primary registro">
+	<div class="panel-heading">
+        <h3 class="titulo-registros">Registro de Vacunas e Inyecciones</h3>
+	</div>
+<div class="panel-body">
+<form>
+<div class="col-md-12 col-sm-12">
+	<div class="form-group col-md-3 col-sm-3">            
+    	<input type="text" class="form-control input-sm" id="num/cod" placeholder="Código">
+    </div>
+
+	<div class="form-group col-md-3 col-sm-3">            
+    	<input type="email" class="form-control input-sm" id="nombre" placeholder="Tipo">
+    </div>
+
+    <div class="form-group col-md-3 col-sm-3">            
+        <input type="text" class="form-control input-sm" id="color" placeholder="Vía">
+    </div>
+
+	<div class="form-group col-md-3 col-sm-3">
+		<input type="text" class="form-control input-sm" id="raza" placeholder="Fecha de Compra">	      
+	</div>
+	
+	<div class="form-group col-md-3 col-sm-3">            
+    	<input type="text" class="form-control input-sm" id="sexo" placeholder="Fecha de Apliccaión">
+    </div>
+	
+	<div class="form-group col-md-3 col-sm-3">            
+    	<input type="text" class="form-control input-sm" id="pi" placeholder="Fecha de Vencimiento">
+    </div>
+
+    
+    <div class="btn-regis" >
+        <input type="submit" class="btn btn-primary btn-reg" value="Registrar"/>
+    </div>
+	
+</div>
+	
+	
+</form>
+</div>
+</div>
+      
+       <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Últimos Registros</h3>
+            </div>
+            <div class="panel-body">
+                <table class="table table-strip table-hover">
+                <tr> 
+                    <th>Código</th>
+                    <th>Tipo</th>
+                    <th>Vía</th>
+                    <th>Fecha de Compra</th>
+                    <th>Fecha de Aplicación</th>
+                    <th>Fecha de Vencimiento</th>                    
+                </tr>
+                <tr>
+                    <td>AD45</td>
+                    <td>Anti-Inflamatorio</td>
+                    <td>Intravenosa</td>
+                    <td>20/05/2017</td>
+                    <td></td>
+                    <td>20/12/2017</td>
+                </tr>
+                </table>
+            </div>
+        </div> 
+
+    </div> <!-- /container -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+    <script src="js/bootstrap.min.js"></script>   
+
+</body></html>

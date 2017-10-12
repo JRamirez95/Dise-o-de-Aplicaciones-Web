@@ -1,0 +1,85 @@
+.contenido p {     
+     width:45%;    
+     padding:20px;         
+ }
+
+ .contenido h4 {
+     margin:20px; 
+ }
+
+ .contenido ul {
+     margin:20px; 
+ }
+
+ .imagen {  
+    margin-top:-140px;
+    margin-left:-30px;
+    left:50%;
+    top:50%;
+    position:absolute;
+    box-shadow:5px 5px 5px gray; 
+ }
+
+ .v {
+     width:1px;
+     height:550px; 
+     margin-top:-550px;
+     margin-left:615px;
+     position:absolute;   
+ }
+ h1 {
+     color: red;
+ }
+
+h4 {
+    color: green;
+}
+
+.intro{
+    color: blue;
+}
+ ul {
+       display:table;    
+    width:100%;    
+    position:relative; 
+ }
+
+ul li {
+
+  display:table-cell; 
+}
+
+ ul > li:hover > ul {
+    display:block;
+    height:100%;  
+}
+
+ul > li > ul {
+    display:block;
+    position:absolute;
+    background:#000;
+    left:0;
+    right:0;
+    overflow:hidden;
+    height:0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;       
+}
+
+ ul li a {
+    color:#fff; 
+    display:block;
+    line-height:20px;
+    padding:20px;
+    position: relative;
+    text-align:center;
+    text-decoration:none;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;     
+}

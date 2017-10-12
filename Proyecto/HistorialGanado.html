@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">   
+        <title>Historial de Ganado</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link media="all" type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="historiales">
+    
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">          
+          <a class="navbar-brand" href="#"> C.G. Industrial</a>          
+        </div> 
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="">Finca Hnos.Ramírez</a></li>           
+          </ul>
+          <ul class="nav navbar-nav navbar-right">        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Opciones<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Ayuda</a></li>
+            <li><a href="Principal.html"><span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span> Cerrar</a></li>            
+          </ul>
+        </li>
+      </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container barra-busqueda">
+    <div class="row">    
+        <div class="col-xs-8 col-xs-offset-2">
+		    <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	<span id="search_concept">Filtrar por</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#contains">Número/Código</a></li>
+                      <li><a href="#its_equal">Nombre</a></li>
+                      <li><a href="#greather_than">Sexo</a></li>
+                      <li><a href="#less_than">Raza</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#all">Todo</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Buscar">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </div>
+	</div>
+</div>
+
+
+    <div class="container tabla">
+    <div class="row">
+        
+    </div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="panel panel-default panel-table">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col col-xs-6">
+                            <h3 class="panel-title">Historial de Ganado</h3>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <table id="mytable" class="table table-striped table-bordered table-list">
+                        <thead>
+                        <tr>
+                            <th class="col-check"><label type=""/></th>
+                            <th class="col-tools"><span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                            </th>
+                              <th>Número/Código</th>
+                                <th>Nombre</th>
+                                <th>Color</th>
+                                <th>Sexo</th>
+                                <th>Raza</th>
+                                <th>Peso Inicial</th>
+                                <th>Peso Final</th>
+                                <th>Peso Ganadó</th>
+                                <th>Fecha de Entrada</th>
+                                <th>Fecha de Salida</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                       
+                        <tr>
+                            <td align="center"><input type="checkbox" class="checkthis"/></td>
+                            <td align="center">
+                                <a class="btn btn-default"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+                                <a class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                            </td>
+                            <td>AD45</td>
+                            <td>Cara Palida</td>
+                            <td>Josco</td>
+                            <td>Macho</td>
+                            <td>Brahman</td>
+                            <td>350kg</td>
+                            <td>600kg</td>
+                            <td>300kg</td>
+                            <td>15/02/2016</td>
+                            <td>07/12/2016</td>                      
+                        </tr>
+                        <tr>
+                            <td align="center"><input type="checkbox" class="checkthis"/></td>
+                            <td align="center">
+                                <a class="btn btn-default"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+                                <a class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                            </td>
+                            <td>103</td>
+                            <td>Chirvala</td>
+                            <td>Café</td>
+                            <td>Macho</td>
+                            <td>Brahman</td>
+                            <td>250kg</td>
+                            <td>500kg</td>
+                            <td>250kg</td>
+                            <td>20/05/2016</td>
+                            <td>03/02/2017</td>
+                       </tr>
+
+                         <tr>
+                            <td align="center"><input type="checkbox" class="checkthis"/></td>
+                            <td align="center">
+                                <a class="btn btn-default"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+                                <a class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                            </td>
+                                <td>220</td>
+                                <td>Pelotas</td>
+                                <td>Blanco</td>
+                                <td>Macho</td>
+                                <td>Charolay</td>
+                                <td>450kg</td>
+                                <td>850kg</td>
+                                <td>400kg</td>
+                                <td>20/05/2016</td>
+                                <td>15/03/2017</td>
+                       </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/barrabusqueda.js"></script>
+  </body>
+</html>
+ 
